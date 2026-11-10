@@ -48,7 +48,7 @@ Any static host works. It is live on Vercel as a zero-config Vite project (Build
 - **Swap the stickers**: the two stickers are inlined as data URIs in `src/photosData.ts` (keeps the repo self-contained). Replace the data URIs there, or drop your own PNGs into `src/photos/` and import them in `src/App.tsx`.
 - **Restyle**: colors, fonts, and layout live in `src/style.css`.
 - **New bouquets**: the flowers are procedural - tweak shapes and colors in `src/FlowerScene.tsx`.
-- **Share-preview image**: the Open Graph image is served at `https://3d-bouquet.vercel.app/flowers-preview.jpg`; replace it by adding your own `public/flowers-preview.jpg` and updating the `og:image` meta in `index.html`.
+- **Share-preview image**: `scripts/prepare-public.mjs` writes the included JPG from its embedded image data before dev/build. Replace that data to use your own preview. The same script creates `robots.txt` and `sitemap.xml`. If you deploy a fork, update the site URL in that script and the canonical/OG URLs in `index.html`; remove the original Google verification tag.
 
 ## Ideas
 
