@@ -45,10 +45,10 @@ Any static host works. It is live on Vercel as a zero-config Vite project (Build
 ## Make it yours (gift it to someone)
 
 - **Change the words**: the greeting, questions, and messages are all in `src/App.tsx`.
-- **Swap the stickers**: replace the images in `src/photos/` (keep the same file names or update the imports in `src/App.tsx`).
+- **Swap the stickers**: the two stickers are inlined as data URIs in `src/photosData.ts` (keeps the repo self-contained). Replace the data URIs there, or drop your own PNGs into `src/photos/` and import them in `src/App.tsx`.
 - **Restyle**: colors, fonts, and layout live in `src/style.css`.
 - **New bouquets**: the flowers are procedural - tweak shapes and colors in `src/FlowerScene.tsx`.
-- **Share-preview image**: replace `public/flowers-preview.jpg` (used as the Open Graph image when the link is shared).
+- **Share-preview image**: the Open Graph image is served at `https://3d-bouquet.vercel.app/flowers-preview.jpg`; replace it by adding your own `public/flowers-preview.jpg` and updating the `og:image` meta in `index.html`.
 
 ## Ideas
 
