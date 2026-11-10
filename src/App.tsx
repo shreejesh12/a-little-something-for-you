@@ -1,8 +1,7 @@
 import React,{useState} from 'react';
 import {FileCard,Header,Closing} from './fileprims';
 import {FlowerScene} from './FlowerScene';
-import thumbs from './photos/thumbs-up.png';
-import friendship from './photos/friendship.png';
+import {thumbsUp as thumbs, friendship} from './photosData';
 import './style.css';
 export function App(){const [step,setStep]=useState(0);const [name,setName]=useState('');const [answer,setAnswer]=useState('');const [error,setError]=useState('');
  function next(e:React.FormEvent){e.preventDefault();if(step===0&&!name.trim()){setError('A name, nickname, anything you like.');return;}setError('');setStep(step+1);}
