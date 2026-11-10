@@ -2,7 +2,7 @@
 
 An interactive digital bouquet you can gift someone: the site asks their name, asks (politely) if it can flirt with them, then reveals three rotatable 3D bouquets - tulips, a garden box, and wildflowers - rendered live in their browser.
 
-Live demo: https://a-little-something-for-you.vercel.app
+Live demo: https://3d-bouquet.vercel.app
 
 Perfect as a birthday surprise, a friendship-day gift, an anniversary note, or any "thinking of you" moment. Send the link, they enter their name, and the flowers are for them.
 
